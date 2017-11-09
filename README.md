@@ -1,4 +1,4 @@
-# README
+# chatspace
 
 ## messagesテーブル
 
@@ -18,8 +18,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, index|
-|email|string|null: false|
+|name|string|null: false, unique: true, index: true|
+|email|string|null: false, unique: true, index: true|
 |password|string|null: false|
 
 ### Assocsiation
@@ -32,7 +32,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false, unique: true, index: true|
 
 ### Assocsiation
 - has_many :users, through :group_uers
