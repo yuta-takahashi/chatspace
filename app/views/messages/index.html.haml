@@ -8,12 +8,7 @@
       .chat-side__user--icon-edit
         %i.fa.fa-cog
   .chat-side__groups
-    .chat-side__group
-      .chat-side__group-name
-        hoge
-      .chat-side__group-message
-        fuga
-
+    = render partial: "sidegroup"
 .chat-main
   .chat-main__header
     .chat-main__header--group
@@ -27,14 +22,7 @@
         yuta.t
 
   .chat-main__body
-    .chat-main__body--messages-list
-      .chat-main__body--message
-        .chat-main__body--message-name
-          yuta.t
-        .chat-main__body--message-time
-          2017/11/26
-        .chat-main__body--message-body
-          aaa
+    = render partial: "message"
 
   .chat-main__footer
     .chat-main__footer--form
