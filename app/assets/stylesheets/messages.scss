@@ -94,6 +94,7 @@
 
   &__body {
     height: calc(100vh - 211px);
+    background-color: $smoke-white;
     &--messages-list {
       padding: 20px 40px 0;
     }
@@ -149,7 +150,7 @@
       float: right;
       font-size: 16px;
       line-height: 50px;
-      background-color: #38AEF0;
+      background-color: $right-blue;
       color: $white;
       padding: 0 30px;
     }
