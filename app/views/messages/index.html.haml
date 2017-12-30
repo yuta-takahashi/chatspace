@@ -1,0 +1,34 @@
+.chat-side
+  .chat-side__user
+    .chat-side__user-content
+      .chat-side__user-name
+        yuta.t
+      .chat-side__user--icon-new
+        %i.fa.fa-pencil-square-o
+      .chat-side__user--icon-edit
+        %i.fa.fa-cog
+  .chat-side__groups
+    = render partial: "sidegroup"
+.chat-main
+  .chat-main__header
+    .chat-main__header--group
+      .chat-main__header--group-name
+        hoge
+      .chat-main__header--group-edit-btn
+        edit
+    .chat-main__header--members
+      MEMBER:
+      %i
+        yuta.t
+
+  .chat-main__body
+    = render partial: "message"
+
+  .chat-main__footer
+    .chat-main__footer--form
+      .chat-main__footer--text-area
+        type a message
+      .chat-main__footer--image-btn
+        %i.fa.fa-picture-o
+    .chat-main__footer--send-btn
+      send
